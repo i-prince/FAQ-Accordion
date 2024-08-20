@@ -37,3 +37,30 @@ body, html {
     background-repeat: no-repeat;
     z-index: 0; /* Keeps the pattern behind the text */
 }
+
+h1 {
+    display: flex;
+}
+
+.img1 {
+    margin-right: 20px;
+}
+
+h1 {
+    font-weight: 920;
+}
+
+.img2, h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 18px;
+}
