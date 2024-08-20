@@ -3,30 +3,35 @@ import './App.css'
 function App() {
 
   return (
-  <div className='body'>
+  <div className='major'>
+
+    <div className='mbody'>
     <h1>
       FAQs
     </h1>
 
-    <h4>
+    <h3>
       What is Frontend Mentor and how will it help me?
-    </h4>
+    </h3>
 
     <p>
       Frontend mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and Javascript. It's suitable for all levels and ideal for portfolio building.
     </p>
 
-    <h4>
+    <h3>
       Is Frontend mentor free?
-    </h4>
+    </h3>
 
-    <h4>
+    <h3>
       Can I use Frontend mentor projects in my portfolio?
-    </h4>
+    </h3>
 
-    <h4>
+    <h3>
       How can i get help if I am stuck in a challenge?
-    </h4>
+    </h3>
+
+    </div>
+    
 
   </div>
   )

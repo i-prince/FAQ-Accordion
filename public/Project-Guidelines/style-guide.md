@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ## Colors
 
-- White: hsl(0, 0%, 100%)
+- White: hsl(0, 0%, 100%)public/Project Guidelines/assets/images/background-pattern-desktop.svg
 - Light pink: hsl(275, 100%, 97%)
 - Grayish purple: hsl(292, 16%, 49%)
 - Dark purple: hsl(292, 42%, 14%)
