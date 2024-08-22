@@ -71,3 +71,15 @@ h3 {
     padding-top: 25px;
     padding-bottom: 10px;
 }
+
+.drop-content {
+    display: none; /* Hide the content by default */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .drop-content.show {
+    display: block; /* Show content when 'show' class is added */
+  }

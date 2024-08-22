@@ -22,20 +22,29 @@ function App() {
       </p>
 
       <div className='dropdown'>
-        <h3 className='id1'>
+        <h3 className='drop1'>
           Is Frontend mentor free?
           <img src='public/Project-Guidelines/assets/images/icon-plus.svg'></img>
         </h3>
+        <div className='drop-content'>
+              <p>Yes, Frontend Mentor offers free challenges. However, there are also premium challenges available for subscribers.</p>
+            </div>
 
-        <h3 className='id2'>
+        <h3 className='drop2'>
           Can I use Frontend mentor projects in my portfolio?
           <img src='public/Project-Guidelines/assets/images/icon-plus.svg'></img>
         </h3>
+        <div className='drop-content'>
+              <p>Yes, you can use Frontend Mentor projects in your portfolio to showcase your skills.</p>
+        </div>
 
-        <h3 className='id3'>
+        <h3 className='drop3'>
           How can i get help if I am stuck in a challenge?
           <img src='public/Project-Guidelines/assets/images/icon-plus.svg'></img>
         </h3>
+        <div className='drop-content'>
+              <p>You can ask for help in the Frontend Mentor community or refer to the solutions provided.</p>
+        </div>
         
       </div>
 
@@ -44,6 +53,6 @@ function App() {
 
   </div>
   )
-}
 
+}
 export default App
