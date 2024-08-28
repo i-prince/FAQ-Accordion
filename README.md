@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of my FAQ Accordion Solution](./assets/images/Screenshot%20from%202024-08-28%2014-14-57.png)
+![Screenshot of my FAQ Accordion Solution](./public/Project-Guidelines/assets/images/Screenshot%20from%202024-08-28%2014-14-57.png)
 
 ### Links
 
