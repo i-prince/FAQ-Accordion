@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/i-prince/FAQ-Accordion",
+  "homepage": "https://i-prince.github.io/FAQ-Accordion/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
