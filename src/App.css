@@ -4,6 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
 .major { /* background body */
     display: flex;
     justify-content: center;
@@ -25,14 +26,14 @@ body, html {
     width: 40%;
 }
 
-.major::before { /*background image */
+.major::before { /* background image */
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 200px; 
-    background-image: url(public/Project-Guidelines/assets/images/background-pattern-desktop.svg);
+    background-image: url('./assets/background-pattern-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0; /* Keeps the pattern behind the text */
@@ -63,7 +64,6 @@ p {
 
 h3 {
     font-size: 18px;
-    
 }
 
 .dropdown h3 {
@@ -78,8 +78,8 @@ h3 {
     border: 1px solid #ddd;
     margin-top: 10px;
     background-color: #f9f9f9;
-  }
-  
-  .drop-content.show {
+}
+
+.drop-content.show {
     display: block; /* Show content when 'show' class is added */
-  }
+}
