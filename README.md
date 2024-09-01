@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click to Access the Github Link to the Solution](https://github.com/i-prince/FAQ-Accordion)
-- Live Site URL: [Click to Access the Live App](https://your-live-site-url.com)
+- Live Site URL: [Click to Access the Live App](https://i-prince.github.io/FAQ-Accordion/)
 
 ## My Process
 
