@@ -14,7 +14,7 @@ function App() {
 
       <h3 className='img2'>
         What is Frontend Mentor and how will it help me?
-        <img src='public/Project-Guidelines/assets/images/icon-minus.svg'></img>
+        <img src='src/assets/icon-minus.svg'></img>
       </h3>
 
       <p>
