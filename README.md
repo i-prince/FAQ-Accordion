@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of my FAQ Accordion Solution](./public/Project-Guidelines/assets/images/Screenshot%20from%202024-08-28%2014-14-57.png)
+![Screenshot of my FAQ Accordion Solution](./public/Project-Guidelines/assets/images/Screenshot%20from%202024-09-02%2020-50-29.png)
 
 ### Links
 
@@ -72,8 +72,6 @@ const toggleDropdown = () => {
 ### Continued development
 
 I plan to explore more advanced React features, such as context and hooks, to manage state and props more efficiently in similar projects. Improving my skills in responsive design and accessibility is also a priority for future projects.
-
-Fix the dropdown feature
 
 ### Useful Resources
 
