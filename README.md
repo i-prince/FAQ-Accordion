@@ -73,6 +73,8 @@ const toggleDropdown = () => {
 
 I plan to explore more advanced React features, such as context and hooks, to manage state and props more efficiently in similar projects. Improving my skills in responsive design and accessibility is also a priority for future projects.
 
+Fix the dropdown feature
+
 ### Useful Resources
 
 - [React Documentation](https://reactjs.org/docs/getting-started.html) - The official documentation for React, which was invaluable in building this project.
