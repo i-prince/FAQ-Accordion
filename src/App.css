@@ -1,29 +1,32 @@
+/* Base styles (for larger screens) */
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 .major { /* background body */
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: fixed;
+    align-items: flex-start; /* Align content to the top */
     min-height: 100vh;
-    min-width: 100vw;
-    background-color: bisque;
-    z-index: -1;
+    width: 100%; /* Make sure the width is 100% */
+    background-color: #D8BFD8;
+    position: relative; /* Use relative positioning instead of fixed */
 }
 
 .mbody { /* FAQ content body */
+    margin-top: 100px;
     position: relative;
     padding: 40px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Adds shadow similar to the image */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     font-family: Arial, Helvetica, sans-serif;
     width: 40%;
+    margin-bottom: 20px; /* Add margin to avoid touching the bottom of the screen */
 }
 
 .major::before { /* background image */
@@ -36,7 +39,7 @@ body, html {
     background-image: url('./assets/background-pattern-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0; /* Keeps the pattern behind the text */
+    z-index: 0;
 }
 
 h1 {
@@ -51,7 +54,7 @@ h1 {
     font-weight: 920;
 }
 
-.img2, h3 {
+.img2, h3, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,20 +69,108 @@ h3 {
     font-size: 18px;
 }
 
-.dropdown h3 {
+.dropdown h3, h2 {
     border-top: solid 0.5px rgba(0, 0, 0, 0.1);
     padding-top: 25px;
     padding-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+.dropdown h3:hover, h2:hover {
+    color: #9370DB; /* Change the color on hover */
+}
+
+/* Styling the dropdown content */
 .drop-content {
-    display: none; /* Hide the content by default */
-    padding: 10px;
-    border: 1px solid #ddd;
+    display: none;
+    padding: 15px;
     margin-top: 10px;
-    background-color: #f9f9f9;
+    background-color: #f3f4f6; /* Slightly darker background */
+    border-left: 3px solid #D8BFD8; /* Add a left border to match hover color */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Darker text color for readability */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    line-height: 1.6;
+}
+
+.drop-content p {
+    margin: 0; /* Remove default margins */
 }
 
 .drop-content.show {
-    display: block; /* Show content when 'show' class is added */
+    display: block;
+}
+
+/* Optional: Add a subtle animation for dropdown */
+.drop-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.drop-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .mbody {
+        width: 60%; /* Make the FAQ content body wider on smaller screens */
+        padding: 20px; /* Reduce padding to save space */
+        margin-top: 50px; /* Reduce the top margin for a better fit */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce the font size for the title */
+    }
+
+    h3 {
+        font-size: 16px; /* Reduce the font size for the headers */
+    }
+
+    p {
+        font-size: 14px; /* Reduce the font size for paragraphs */
+        line-height: 22px; /* Adjust line height accordingly */
+    }
+}
+
+/* Even smaller devices (like mobile phones) */
+@media (max-width: 480px) {
+    .mbody {
+        width: 60%; /* Increase width to use more of the screen on small devices */
+        padding: 15px; /* Further reduce padding */
+        margin-top: 30px; /* Reduce the top margin even more */
+    }
+
+    h1 {
+        font-size: 20px; /* Further reduce the font size for the title */
+    }
+
+    h3 {
+        font-size: 14px; /* Further reduce the font size for headers */
+    }
+
+    p {
+        font-size: 13px; /* Further reduce the font size for paragraphs */
+        line-height: 20px; /* Adjust line height accordingly */
+    }
+}
+
+
+.drop-content a:hover {
+    color: #D8BFD8; /* Change link color to match hover effect on headers */
+    text-decoration: underline; /* Optionally, add underline on hover */
+}
+
+.drop-content ul {
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove left padding from the list */
+    margin-top: 10px; /* Add some margin above the list */
+}
+
+.drop-content li {
+    margin-bottom: 10px; /* Add some space between list items */
 }
